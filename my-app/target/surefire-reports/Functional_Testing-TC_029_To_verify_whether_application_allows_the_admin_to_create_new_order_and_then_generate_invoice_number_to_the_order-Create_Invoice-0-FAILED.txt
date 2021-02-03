@@ -1,0 +1,47 @@
+Status: FAILED
+Time Taken: 293
+Size: 49
+Timestamp: Wed Feb 03 09:47:16 IST 2021
+TestStep: Create Invoice
+
+----------------- Messages ------------------------------
+[Script Assertion] No signature of method: com.eviware.soapui.impl.wsdl.WsdlProject.setPropertyValue() is applicable for argument types: (java.lang.String, java.util.ArrayList) values: [invoice_no, []]
+Possible solutions: setPropertyValue(java.lang.String, java.lang.String), getPropertyValue(java.lang.String)
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://rest-api.upskills.in
+Method: POST
+StatusCode: 403
+URL: http://rest-api.upskills.in/index.php?route=rest%2Forder_admin%2Finvoice&id=%5B%5D
+
+---------------- Request ---------------------------
+Authorization: [Bearer 808bf89144c679d00ef0c5e27ec1fbf28dc015bd]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [rest-api.upskills.in]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+Content-Type: [application/json]
+
+POST http://rest-api.upskills.in/index.php?route=rest%2Forder_admin%2Finvoice&id=%5B%5D HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 808bf89144c679d00ef0c5e27ec1fbf28dc015bd
+Content-Length: 0
+Host: rest-api.upskills.in
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Server: [LiteSpeed]
+Connection: [Keep-Alive]
+Set-Cookie: [OCSESSID=41370ecea0c7b6b33df56672ac; path=/, language=en-gb; expires=Fri, 05-Mar-2021 04:17:16 GMT; Max-Age=2592000; path=/; domain=rest-api.upskills.in, currency=INR; expires=Fri, 05-Mar-2021 04:17:16 GMT; Max-Age=2592000; path=/; domain=rest-api.upskills.in]
+#status#: [HTTP/1.1 403 Forbidden]
+Content-Length: [49]
+Date: [Wed, 03 Feb 2021 04:17:16 GMT]
+X-Powered-By: [PHP/5.6.40]
+Content-Type: [application/json; charset=utf-8]
+
+{"success":0,"error":["Please login."],"data":[]}

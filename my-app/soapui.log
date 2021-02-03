@@ -1,0 +1,69 @@
+2021-02-03 10:00:49,552 WARN  [SoapUI] Missing folder [C:\Users\TariqAnsari\workspaceAPI\Project Rest Admin API\my-app\ext] for external libraries
+2021-02-03 10:00:49,835 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\TariqAnsari\soapui-settings.xml]
+2021-02-03 10:00:51,548 INFO  [WsdlProject] Loaded project from [file:/C:/Users/TariqAnsari/workspaceAPI/Project%20Rest%20Admin%20API/my-app/Rest-Admin-API-soapui-project.xml]
+2021-02-03 10:00:52,174 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Rest Admin API]
+2021-02-03 10:00:52,176 INFO  [SoapUITestCaseRunner] Running Project [Rest Admin API], runType = SEQUENTIAL
+2021-02-03 10:00:52,214 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC_001_To verify whether application allows the admin to get access token]
+2021-02-03 10:00:52,226 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-03 10:00:52,295 INFO  [SoapUITestCaseRunner] running step [Token Authentication]
+2021-02-03 10:00:53,780 INFO  [log] Bearer b66b306c4f002124f0bba098a2468ed15f047372
+2021-02-03 10:00:53,871 INFO  [log] HTTP status code: 200
+2021-02-03 10:00:53,874 INFO  [log] true
+2021-02-03 10:00:53,876 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Access Token ] has status VALID
+2021-02-03 10:00:53,881 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Status Code] has status VALID
+2021-02-03 10:00:53,888 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC_001_To verify whether application allows the admin to get access token], time taken: 800ms, status: FINISHED
+2021-02-03 10:00:53,891 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC_002_To verify whether application allows the admin to login into the system with valid credentials and get admin account details  and log out of the system]
+2021-02-03 10:00:53,893 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-03 10:00:53,895 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2021-02-03 10:00:54,489 INFO  [log] total number of rows containing data are 2
+2021-02-03 10:00:54,505 INFO  [log] current username is "upskills_admin"
+2021-02-03 10:00:54,512 INFO  [log] current password is "Talent4$$"
+2021-02-03 10:00:54,526 INFO  [SoapUITestCaseRunner] running step [Login User]
+2021-02-03 10:00:54,883 INFO  [log] HTTP status code: 200
+2021-02-03 10:00:54,889 INFO  [log] true
+2021-02-03 10:00:54,976 INFO  [log] upskills_admin
+2021-02-03 10:00:54,984 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Status Code] has status VALID
+2021-02-03 10:00:54,986 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Username] has status VALID
+2021-02-03 10:00:54,990 INFO  [SoapUITestCaseRunner] running step [Get User details]
+2021-02-03 10:00:55,338 INFO  [log] HTTP status code: 200
+2021-02-03 10:00:55,340 INFO  [log] true
+2021-02-03 10:00:55,376 INFO  [log] upskills_admin
+2021-02-03 10:00:55,380 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Status Code] has status VALID
+2021-02-03 10:00:55,381 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Username] has status VALID
+2021-02-03 10:00:55,382 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC_002_To verify whether application allows the admin to login into the system with valid credentials and get admin account details  and log out of the system], time taken: 1268ms, status: FINISHED
+2021-02-03 10:00:55,385 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC_029_To verify whether application allows the admin to create new order and then generate invoice number to the order]
+2021-02-03 10:00:55,388 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-02-03 10:00:55,390 INFO  [SoapUITestCaseRunner] running step [Groovy Script - Get data from XLS sheet for Customer]
+2021-02-03 10:00:55,660 INFO  [log] total number of rows containing data are 2
+2021-02-03 10:00:55,663 INFO  [SoapUITestCaseRunner] running step [Create Customer]
+2021-02-03 10:00:55,994 INFO  [log] HTTP status code: 400
+2021-02-03 10:00:55,996 INFO  [log] false
+2021-02-03 10:00:55,998 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Status Code] has status VALID
+2021-02-03 10:00:55,999 INFO  [SoapUITestCaseRunner] running step [Groovy Script - Customer ID]
+2021-02-03 10:00:56,105 INFO  [log] []
+2021-02-03 10:00:56,108 INFO  [SoapUITestCaseRunner] running step [Groovy Script - Get data from XLS sheet for Product]
+2021-02-03 10:00:56,396 INFO  [log] total number of rows containing data are 2
+2021-02-03 10:00:56,402 INFO  [SoapUITestCaseRunner] running step [Create Product]
+2021-02-03 10:00:56,748 INFO  [log] HTTP status code: 200
+2021-02-03 10:00:56,751 INFO  [log] true
+2021-02-03 10:00:56,755 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - status Code] has status VALID
+2021-02-03 10:00:56,757 INFO  [SoapUITestCaseRunner] running step [Groovy Script - Product ID]
+2021-02-03 10:00:56,806 INFO  [log] 3433
+2021-02-03 10:00:56,808 INFO  [SoapUITestCaseRunner] running step [Create Order]
+2021-02-03 10:00:57,686 INFO  [log] HTTP status code: 200
+2021-02-03 10:00:57,691 INFO  [log] true
+2021-02-03 10:00:57,722 INFO  [log] 739
+2021-02-03 10:00:57,724 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Status code] has status VALID
+2021-02-03 10:00:57,725 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - OrderID] has status VALID
+2021-02-03 10:00:57,726 INFO  [SoapUITestCaseRunner] running step [Create Invoice]
+2021-02-03 10:00:59,047 INFO  [log] HTTP status code: 200
+2021-02-03 10:00:59,048 INFO  [log] true
+2021-02-03 10:00:59,068 INFO  [log] INV-2013-00135
+2021-02-03 10:00:59,071 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion - Status Code] has status VALID
+2021-02-03 10:00:59,071 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-02-03 10:00:59,072 INFO  [SoapUITestCaseRunner] running step [Groovy Script to update Order ID and Invoice number in XLS Sheet]
+2021-02-03 10:00:59,444 INFO  [log] 5
+2021-02-03 10:00:59,447 INFO  [log] 739
+2021-02-03 10:00:59,448 INFO  [log] INV-2013-00135
+2021-02-03 10:00:59,611 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC_029_To verify whether application allows the admin to create new order and then generate invoice number to the order], time taken: 4027ms, status: FINISHED
+2021-02-03 10:00:59,615 INFO  [SoapUITestCaseRunner] Project [Rest Admin API] finished with status [FINISHED] in 7432ms

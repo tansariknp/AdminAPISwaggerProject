@@ -1,0 +1,49 @@
+Status: FAILED
+Time Taken: 329
+Size: 49
+Timestamp: Wed Feb 03 09:42:27 IST 2021
+TestStep: Create Customer
+
+----------------- Messages ------------------------------
+[Script Assertion - Status Code] assert condition
+       |
+       false
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://rest-api.upskills.in
+Method: POST
+StatusCode: 403
+URL: http://rest-api.upskills.in/api/rest_admin/customers
+
+---------------- Request ---------------------------
+Authorization: [Bearer 36b7877b869c65794b585144c3de61cf3141036d]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [rest-api.upskills.in]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [159]
+Content-Type: [application/json]
+
+POST http://rest-api.upskills.in/api/rest_admin/customers HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 36b7877b869c65794b585144c3de61cf3141036d
+Content-Length: 159
+Host: rest-api.upskills.in
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+
+---------------- Response --------------------------
+Server: [LiteSpeed]
+Connection: [Keep-Alive]
+Set-Cookie: [OCSESSID=ee0e244f626cad5ec6a404c44f; path=/, language=en-gb; expires=Fri, 05-Mar-2021 04:12:27 GMT; Max-Age=2592000; path=/; domain=rest-api.upskills.in, currency=INR; expires=Fri, 05-Mar-2021 04:12:27 GMT; Max-Age=2592000; path=/; domain=rest-api.upskills.in]
+#status#: [HTTP/1.1 403 Forbidden]
+Content-Length: [49]
+Date: [Wed, 03 Feb 2021 04:12:27 GMT]
+X-Powered-By: [PHP/5.6.40]
+Content-Type: [application/json; charset=utf-8]
+
+{"success":0,"error":["Please login."],"data":[]}
